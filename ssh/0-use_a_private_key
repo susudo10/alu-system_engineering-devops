@@ -1,0 +1,3 @@
+#!/usr/bin/env bash 
+#  connect to your server using the private key 
+ssh 58b51d7b39bf.1009380b.alu-cod.online -i ~/.ssh/school
