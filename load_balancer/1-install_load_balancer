@@ -12,7 +12,7 @@ else
     echo "ENABLED=1" >> /etc/default/haproxy
 fi
 
-# Configure HAProxy - overwrite with a simple, valid config
+# Configure HAProxy
 cat > /etc/haproxy/haproxy.cfg << 'EOF'
 global
     log /dev/log local0
@@ -39,5 +39,5 @@ backend web-backend
     server web-02 44.211.154.38:80 check
 EOF
 
-# Start / restart HAProxy
+#restart HAProxy
 service haproxy restart
